@@ -26,6 +26,7 @@ fi
 
 # Bring up the Docker containers
 echo "Starting Docker containers..."
+docker-compose down
 docker-compose up -d
 
 if [ $? -eq 0 ]; then
